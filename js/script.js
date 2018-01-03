@@ -4,17 +4,20 @@ function functSubmit(event) {
   // format the url
   url = "http://pokeapi.co/api/v2/pokemon/" + msg + "/"
   console.log(url)
-  // fetch the data
-  // display the name in a tag
+  fetch(url)
+    .then((r) => {
+      console.log(r.json())
+    })
+
 }
 
-renderFromPoke = () => {
-  fetch('https://pokeapi.co/')
-  .then(r => r.json())
-  .then(pokes => renderPoke(pokes))
-}
-
-renderPoke = (data) => {
-  let name = data["forms"][0]["name"]
-  document.getElementById('response').innerText = name
-}
+// renderFromPoke = (url) => {
+//   fetch(url)
+//   .then(r => {r.json(); console.log(r);})
+//   .then(pokes => {console.log(pokes); renderPoke(pokes);})
+// }
+//
+// renderPoke = (data) => {
+//   let name = data["forms"][0]["name"]
+//   document.getElementById('response').innerText = name
+// }
