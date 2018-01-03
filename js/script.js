@@ -1,6 +1,11 @@
 function functSubmit(event) {
   var msg = document.getElementById("myInput").value;
   alert(msg);
+  // format the url
+  url = "http://pokeapi.co/api/v2/pokemon/" + msg + "/"
+  console.log(url)
+  // fetch the data
+  // display the name in a tag
 }
 
 renderFromPoke = () => {
