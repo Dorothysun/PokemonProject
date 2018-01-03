@@ -9,7 +9,7 @@ function functSubmit(event) {
 
 function renderPoke(data) {
     let pokePic = (data["forms"][0]["name"])
-    document.getElementById("response").innerText= pokePic 
+    document.getElementById("name").innerText= pokePic
 }
 
 // async function get_pokemon_from_api(url) {
