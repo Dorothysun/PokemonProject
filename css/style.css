@@ -43,10 +43,10 @@ q:before, q:after {
 	content: none;
 }
 table {
-    margin-left: 40%;
+  margin-left: 40%;
 	border-collapse: collapse;
 	border-spacing: 0;
-    width: 20%
+  width: 20%
 }
 
 html {
@@ -65,6 +65,8 @@ h1 {
 
 #myInput {
     font-size:64pt;
+		text-align: center;
+		
 }
 
 #form {
@@ -78,4 +80,9 @@ h1 {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+td:empty:after {
+    content: 'PlaceHolder';
+    color: #B2293D;
 }
