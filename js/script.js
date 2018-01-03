@@ -8,8 +8,14 @@ function functSubmit(event) {
 }
 
 function renderPoke(data) {
-    let pokePic = (data["forms"][0]["name"])
-    document.getElementById("name").innerText= pokePic
+    let name = (data["name"])
+    document.getElementById("name").innerText= name
+    let exp = (data["base_experience"])
+    document.getElementById("exp").innerText= exp
+    let height = (data["height"])
+    document.getElementById("height").innerText= height
+    let weight = (data["weight"])
+    document.getElementById("weight").innerText= weight
 }
 
 // async function get_pokemon_from_api(url) {
