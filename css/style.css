@@ -50,9 +50,14 @@ table {
 html {
     font-family: Lato;
     text-align: center;
+    background-color: #B2293D;
 }
 
 #prompt {
+    font-size: 1em;
+}
+
+h1 {
     font-size: 3em;
 }
 
