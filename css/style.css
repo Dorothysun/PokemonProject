@@ -64,3 +64,8 @@ h1 {
 #myInput {
     font-size:64pt;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
